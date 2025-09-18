@@ -109,13 +109,13 @@ stream 사용 시 .stream() 뒤에 줄바꿈
 <img width="1013" height="834" alt="에버플로우_ERD" src="https://github.com/user-attachments/assets/b0e37d30-f862-424a-939d-968d5db7a9d8" />
 
 
-## 📁 프로젝트 구조
-## 파일 구조(요약 (DDD 계층구조 기반))
+## 📁 프로젝트 파일 구조
 <img width="361" height="408" alt="스크린샷 2025-09-18 오후 1 27 29" src="https://github.com/user-attachments/assets/4d54c867-5e88-466b-99ef-aabf4d259d3c" />
+[요약 버전, DDD 계층구조 기반]
 <br>
 
 <details>
-<summary><h2>📁 파일 구조 상세(펼침)</h2></summary>
+<summary><h2>📁 파일 구조 상세보기(펼침)</h2></summary>
 <img width="361" height="767" alt="스크린샷 2025-09-18 오후 1 27 53" src="https://github.com/user-attachments/assets/6c3e4380-fc29-455a-9b13-50456f8a948f" />
 <img width="356" height="743" alt="스크린샷 2025-09-18 오후 1 28 09" src="https://github.com/user-attachments/assets/8e201189-3093-4ce6-9ce2-ede4a08620d0" />
 </details>
