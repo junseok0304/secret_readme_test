@@ -1,52 +1,49 @@
-# 2025_SEASONTHON_TEAM_2_BE
-[2025 kakao X groom 시즌톤] 2팀 [ Everflow ] 백엔드 레포지토리
+<h1> <p align="center"> ☁️ [2025 kakao X 9oorm 시즌톤] 2팀 Everflow (에버플로우) ☁️ </p> </h1>
+<p align="center">$\huge{\rm{\color{#5ad7b7}세대를\ 잇는\ 소통의\ 흐름}}$</p>
+<h2> <p align="center">🌊 Everflow 와 함께해보세요.</p> </h2>
 
-가족과 함꼐, 
+<img width="1920" height="1080" alt="에버플로우_아키텍쳐맵" src="https://github.com/user-attachments/assets/752430aa-aa51-47e9-8764-f21266954c02" />
+(서비스 소개 문구 )
 
-<img width="7680" height="4320" alt="에버플로우_아키텍쳐맵" src="https://github.com/user-attachments/assets/752430aa-aa51-47e9-8764-f21266954c02" />
+## 📌 프로젝트 목표
+(작성필요)
 
-"이거 어떻게 버려야 하지?" 헷갈리는 분리배출, 이제 그만!
-분리특공대는 복잡한 쓰레기 배출 정보를 한눈에 알려주고, 우리 동네 배출일에 맞춰 알림을 보내주는 똑똑한 분리배출 가이드 서비스입니다.
-📌 기본 설명
-목표
-사용자 위치(기본 자치구/동) 기반으로 품목별 올바른 분리배출 방법을 안내
-자주 검색되는 항목을 3시간 단위 랭킹으로 보여주어 트렌드를 제공
-잘못 버리기 쉬운 주의 품목을 별도 안내(예: 음식물 타입이지만 실제로는 일반쓰레기)
-⚙️ Bakcend 기술 스택
-Gradle project
-Spring Boot 3.x
-Java 21
-MySQL 8.x
-Spring Data JPA
-Spring Security + OAuth2 Client
-jdbc template
-☁️ 인프라 기술 스택
-AWS EC2 + Docker
-AWS RDS MySQL
-AWS S3
-Docker Hub
-GitHub Actions (CI/CD)
-🚀 주요 기능
-인증/회원
-카카오 OAuth2 로그인
-JWT 발급/재발급, 로그아웃
-지역 관리
-시/도, 시/군/구, 읍/면/동 검색 및 기본 자치구 설정
-분리배출 가이드
-이미지 분석을 통해 쓰레기 분리 배출 방법 제공
-품목 키워드 검색 → 지역별 배출 규칙 반환
-주의 품목(redirect 타입) 처리
-랭킹/트렌드
-검색 로그 집계 → 3시간 단위 랭킹 갱신
-공지/이력
-Revision을 통한 제도 변경/공지 제공
+## 🌱 BE 기술 요약
+Java 17 / MySQL 8.4.3 / Gradle <br>
+openjdk version "17.0.15" (2025-04-15 LTS) <br>
+springframework.boot version '3.5.5' <br>
+Spring Security + OAuth2 <br>
+Spring Data JPA / Spring JDBC <br>
+<br>
+💬 OAuth2 KAKAO OIDC Login <br>
+🎮 Discord Webhooks <br>
+🤖 AI-Powered "Gemini" <br>
 
+## DevOps 기술 요약
+AWS VPC (Public, Private) <br>
+AWS EC2 free-tier t3.micro(ram-swapped) <br>
+AWS RDS MySQL <br>
+AWS S3, ECR, IAM <br>
+Docker, Docker-compose <br>
+<br>
+Github Actions (CI/CD pipeline) <br>
+Grafana monitoring system <br>
+Prometheus / Node-exportor <br>
+Alert-manager / Prometheus Blackbox<br>
 
-
-
-
-
-
+## 🚀 주요 기능
+카카오 OAuth2 OIDC 기반 회원가입/로그인 <br>
+JWT 기반 토큰 관리, 재발급, 로그아웃, 토큰 블랙리스트 <br>
+유저 프로필 이미지 수정, 닉네임 수정 <br><br>
+가족 생성 / 가족 참여를 통한 구성원 소속 / 가족 코드, 가입 승인 대기 가족 관련 기능<br>
+가족 책자 답변 / 수정, 커스텀 질문 추가, 답변 / 수정 <br>
+가족 메모 (구성원 모두에게 보이며, 모두가 수정 가능, 즉시반영) <br>
+가족 구성원간 약속 생성, 수락 / 거절, 캘린더 월별, 일별 조회 <br>
+액션 알림 (수락, 거절), 일반 알림 <br><br>
+모바일 반응형 UI - 큰글씨 기능 <br>
+관리자 API (Gemini 미작동 상황을 미연에 방지, 수동 토픽(오늘의 질문) 등록) <br>
+Gemini 기반 생성형 "오늘의 질문" 제공 (자정 크론잡)
+SSE 기반 실시간 알림, 알림 연동 토스트 메시지 제공 <br>
 
 <details>
 <summary><h2>🤝 개발자 간 협업 방법(코드컨벤션, 브랜치 전략 등)</h2></summary>
@@ -107,3 +104,21 @@ stream 사용 시 .stream() 뒤에 줄바꿈
 <br>
 
 </details>
+
+# ERD
+<img width="1013" height="834" alt="에버플로우_ERD" src="https://github.com/user-attachments/assets/b0e37d30-f862-424a-939d-968d5db7a9d8" />
+
+
+# 프로젝트 구조 (DDD 계층구조 구성을 위해 노력)
+## 파일 구조(요약)
+<img width="361" height="408" alt="스크린샷 2025-09-18 오후 1 27 29" src="https://github.com/user-attachments/assets/4d54c867-5e88-466b-99ef-aabf4d259d3c" />
+<br>
+< 파일 구조(펼침) >
+<br>
+<img width="361" height="767" alt="스크린샷 2025-09-18 오후 1 27 53" src="https://github.com/user-attachments/assets/6c3e4380-fc29-455a-9b13-50456f8a948f" />
+<img width="356" height="743" alt="스크린샷 2025-09-18 오후 1 28 09" src="https://github.com/user-attachments/assets/8e201189-3093-4ce6-9ce2-ede4a08620d0" />
+
+
+
+
+
