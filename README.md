@@ -7,11 +7,14 @@
 매일 함께 지내고 대화를 나누더라도, 가족 간의 생각이나 취향, 감정은 종종 놓치기 마련입니다.<br>
 에버플로우는 이러한 간격을 좁히고, 세대 간 이해를 돕는 따뜻한 연결의 공간입니다.</p></h3>
 
+<br>
 
 ## 📌 프로젝트 목표
 - 세대 간 대화의 시작: 3일 간격으로 AI가 생성하는 질문으로 자연스럽게 이어지는 대화
 - 깊어지는 유대감: 자기소개부터 가치관까지 공유할 수 있는 ‘가족 책장’
 - 확장되는 소통: 가족내에서 약속을 편지처럼 주고받으며 오프라인으로 이어지는 만남
+
+<br>
 
 ## 🌱 BE 기술 요약
 Java 17 / MySQL 8.4.3 / Gradle <br>
@@ -24,6 +27,8 @@ Spring Data JPA / Spring JDBC <br>
 🎮 Discord Webhooks <br>
 🤖 AI-Powered "Gemini" <br>
 
+<br>
+
 ## 🔧 DevOps 기술 요약
 AWS VPC (Public, Private) <br>
 AWS EC2 free-tier t3.micro(ram-swapped) <br>
@@ -35,6 +40,8 @@ Github Actions (CI/CD pipeline) <br>
 Grafana monitoring system <br>
 Prometheus / Node-exportor <br>
 Alert-manager / Prometheus Blackbox<br>
+
+<br>
 
 ## 🚀 주요 기능
 카카오 OAuth2 OIDC 기반 회원가입/로그인 <br>
@@ -49,6 +56,8 @@ JWT 기반 토큰 관리, 재발급, 로그아웃, 토큰 블랙리스트 <br>
 관리자 API (Gemini 미작동 상황을 미연에 방지, 수동 토픽(오늘의 질문) 등록) <br>
 Gemini 기반 생성형 "오늘의 질문" 제공 (자정 크론잡)
 SSE 기반 실시간 알림, 알림 연동 토스트 메시지 제공 <br>
+
+<br>
 
 <details>
 <summary><h2>🤝 개발자 간 협업 방법(코드컨벤션, 브랜치 전략 등)</h2></summary>
@@ -107,12 +116,12 @@ docs#이슈번호	문서 수정
 else 사용 지양
 stream 사용 시 .stream() 뒤에 줄바꿈
 <br>
-
 </details>
 
 ## 🌟 ERD
 <img width="1013" height="834" alt="에버플로우_ERD" src="https://github.com/user-attachments/assets/b0e37d30-f862-424a-939d-968d5db7a9d8" />
 
+<br>
 
 ## 📁 프로젝트 파일 구조
 <img width="361" height="408" alt="스크린샷 2025-09-18 오후 1 27 29" src="https://github.com/user-attachments/assets/4d54c867-5e88-466b-99ef-aabf4d259d3c" />
